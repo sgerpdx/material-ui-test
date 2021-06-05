@@ -1,6 +1,7 @@
 import React from 'react';
 import MaterialComponents from '../MaterialComponents';
 import CanvasComponent from '../CanvasComponent';
+import JpegEncoder from '../JpegEncoder';
 import Button from '@material-ui/core/Button';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
@@ -42,6 +43,7 @@ export default function App() {
         style={{ backgroundColor: 'blue' }}
       ></canvas> */}
       <MaterialComponents />
+      <JpegEncoder />
     </ThemeProvider>
   );
 }

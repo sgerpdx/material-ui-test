@@ -17,16 +17,22 @@ export default function CanvasComponent(props) {
     };
   };
 
+  //   const toImage = (canvas) => {
+  //     image.src = canvas.toDataURL();
+  //     Canvas2Image.saveAsPNG(canvas);
+  //   };
+
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
 
     //Our draw come here
     draw(context);
+    //toImage(canvas);
   }, [draw]);
   return (
     <>
-      <canvas ref={canvasRef} {...props} width="480" height="360" />
+      <canvas ref={canvasRef} {...props} width="480" height="360" />/
     </>
   );
 }
