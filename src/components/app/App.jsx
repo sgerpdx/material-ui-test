@@ -1,5 +1,14 @@
 import React from 'react';
+import MaterialComponents from '../MaterialComponents';
+import Button from '@material-ui/core/Button';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
+      <MaterialComponents />
+    </>
+  );
 }
