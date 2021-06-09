@@ -2,6 +2,7 @@
   display: grid;
   /* grid-template-rows: 1fr 6fr; */
   grid-template-rows: 15vh 85vh;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .artHeader {
