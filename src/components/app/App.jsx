@@ -1,9 +1,11 @@
 import React from 'react';
 import MaterialComponents from '../MaterialComponents';
+import GridComponent from '../GridComponent';
 import CanvasComponent from '../CanvasComponent';
 import JpegEncoder from '../JpegEncoder';
 import Button from '@material-ui/core/Button';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import BasicLayout from '../BasicLayout';
 
 const theme = createMuiTheme({
   typography: {
@@ -31,19 +33,23 @@ const theme = createMuiTheme({
 
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
-      <CanvasComponent />
-      {/* <canvas
-        id="canvas"
-        width="340"
-        height="340"
-        style={{ backgroundColor: 'blue' }}
-      ></canvas> */}
-      <MaterialComponents />
-      <JpegEncoder />
-    </ThemeProvider>
+    <>
+      <BasicLayout />
+      {/* <ThemeProvider theme={theme}>
+        <GridComponent />
+        <Button variant="contained" color="primary">
+          Hello World
+        </Button>
+        <CanvasComponent />
+        <canvas
+          id="canvas"
+          width="340"
+          height="340"
+          style={{ backgroundColor: 'blue' }}
+        ></canvas>
+        <MaterialComponents />
+        <JpegEncoder />
+      </ThemeProvider> */}
+    </>
   );
 }
